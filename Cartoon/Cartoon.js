@@ -2,14 +2,17 @@ function draw() {
     //find canvas specified in Cartoon.html
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
+
     //canvas background
     ctx.fillStyle = "midnightblue";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
+
     //text on canvas
     ctx.font="15px Cursive";
     ctx.fillStyle = "yellow";
     ctx.textAlign = "center";
     ctx.fillText("this is a cartoon", canvas.width/2, 30);
+
     //moon
     ctx.beginPath();
     ctx.arc(400,90,40,0,2*Math.PI);
@@ -18,6 +21,7 @@ function draw() {
     ctx.fillStyle = "lemonchiffon";
     ctx.stroke();
     ctx.fill();
+
     //moon holes
     ctx.beginPath();
     ctx.arc(419,70,7,0,1.5*Math.PI);
@@ -54,14 +58,54 @@ function draw() {
     ctx.fillStyle = "beige";
     ctx.stroke();
     ctx.fill();
-    //speech bubble
-    // ctx.moveTo(75, 25);
-    // ctx.quadraticCurveTo(25, 25, 25, 62.5);
-    // ctx.quadraticCurveTo(25, 100, 50, 100);
-    // ctx.quadraticCurveTo(50, 120, 30, 125);
-    // ctx.quadraticCurveTo(60, 120, 65, 100);
-    // ctx.quadraticCurveTo(125, 100, 125, 62.5);
-    // ctx.quadraticCurveTo(125, 25, 75, 25);
+
+    //cloud 1
+    ctx.beginPath();
+    ctx.moveTo(15, 145);
+    ctx.quadraticCurveTo(55, 70, 90, 130);
+    ctx.quadraticCurveTo(110, 115, 130, 145);
+    ctx.stroke();
+    ctx.fill();
+    //cloud 2
+    ctx.beginPath();
+    ctx.moveTo(140, 170);
+    ctx.quadraticCurveTo(150, 130, 165, 150);
+    ctx.quadraticCurveTo(195, 100, 225, 155);
+    ctx.quadraticCurveTo(250, 130, 270, 170);
+    ctx.stroke();
+    ctx.fill();
+    //cloud 3
+    ctx.beginPath();
+    ctx.moveTo(290, 160);
+    ctx.quadraticCurveTo(320, 100, 375, 150);
+    ctx.quadraticCurveTo(400, 130, 430, 160);
+    ctx.stroke();
+    ctx.fill();
+    //cloud 4
+    ctx.beginPath();
+    ctx.moveTo(400, 190);
+    ctx.quadraticCurveTo(420, 160, 450, 170);
+    ctx.quadraticCurveTo(470, 100, 590, 190);
+    ctx.stroke();
+    ctx.fill();
+
+    //ground
+    ctx.beginPath();
+    ctx.arc(250, 1100, 700, 0, Math.PI, true); // Mouth (clockwise)
+    ctx.strokeStyle = "darkgreen";
+    ctx.fillStyle ="darkslategrey";
+    ctx.stroke();
+    ctx.fill();
+    //ex
+    // ctx.beginPath();
+    // for (var x = 0.5; x <= canvas.width; x += 25) {
+    //     ctx.moveTo(x, 0);
+    //     ctx.lineTo(x, canvas.height);
+    // }
+    // for (var y = 0.5; y <= canvas.height; y += 25) {
+    //     ctx.moveTo(0, y);
+    //     ctx.lineTo(canvas.width, y);
+    // }
     // ctx.stroke();
 }
 //call function after the document has been loaded
