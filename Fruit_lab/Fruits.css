@@ -1,0 +1,12 @@
+.title {
+    text-align: center;
+}
+
+.canvas-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home {
+    text-align: center;
+}
