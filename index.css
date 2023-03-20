@@ -17,6 +17,10 @@ p{
     padding-left: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* .lab-links {
 
 } */

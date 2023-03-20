@@ -96,17 +96,26 @@ function draw() {
     ctx.fillStyle ="darkslategrey";
     ctx.stroke();
     ctx.fill();
-    //ex
-    // ctx.beginPath();
-    // for (var x = 0.5; x <= canvas.width; x += 25) {
-    //     ctx.moveTo(x, 0);
-    //     ctx.lineTo(x, canvas.height);
-    // }
-    // for (var y = 0.5; y <= canvas.height; y += 25) {
-    //     ctx.moveTo(0, y);
-    //     ctx.lineTo(canvas.width, y);
-    // }
-    // ctx.stroke();
+
+    //house
+    ctx.beginPath();
+    ctx.fillStyle = "brown";
+    ctx.fillRect(150, 300, 200, 130);
+    //roof
+    ctx.beginPath();
+    ctx.moveTo(150, 300);
+    ctx.lineTo(250, 200);
+    ctx.lineTo(350, 300);
+    ctx.fillStyle = "black";
+    ctx.fill();
+    //grid
+    ctx.beginPath();
+    for (var x = 40; x <= canvas.width-40; x += 40) {
+        ctx.moveTo(x, 400);
+        // ctx.lineTo(x, 450);
+        ctx.fillStyle = "lightgray";
+        ctx.fillRect(x, 380, 20, 70);
+    }
 }
 //call function after the document has been loaded
 document.addEventListener(`DOMContentLoaded`, draw);
