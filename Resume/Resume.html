@@ -1,17 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Resume</title>
 </head>
+
 <body>
     <div>
-        <h2>Resume Lab</h2>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Resume</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#Portfolio">Portfolio</a>
+                        <a class="nav-link" href="#Skills">Skills</a>
+                        <a class="nav-link" href="#Experience">Experience</a>
+                        <a class="nav-link" href="#Education">Education</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section id="Portfolio" class="row text-center p-4 bg-success bg-opacity-10">
+            <p class="col">
+                <b class="fs-2">Meggie Cheng</b>
+                <br>
+                CUNY Brooklyn College Multimedia Computing B.S.
+                <br>
+                GPA: 3.47
+                <br>
+                <b class="fs-5">Contact Info:</b>
+                <br>
+                Cellphone: 718-844-7318
+                <br>
+                Email: meggie.cheng46@bcmail.cuny.edu
+                <br>
+                <b class="fs-6">Languages:</b>
+                <br>
+                English - Proficient
+                <br>
+                Chinese (Mandarin) - native, limited proficiency
+                <br>
+                <b class="fs-5">Summary:</b>
+                <br>
+                some text
+            </p>
+        </section>
+
+        <section id="Skills" class="row text-center p-4">
+            <b class="fs-2">Skills</b>
+            <div class="list-unstyled col-md-6 offset-md-3 list-group p-4 border border-2 border-info">
+                <a href="#" class="list-group-item list-group-item-action">
+                    Java
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    HTML
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    CSS
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    React
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    Bootstrap
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    Express JS
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    Git
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    Adobe Illustrator, Photoshop, Indesign, After Effects
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    Unity 2d engine
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    Cloud Firestore - Firebase
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    MySQL
+                </a>
+            </div>
+        </section>
+
+        <section id="Experience" class="row text-center p-4 bg-primary bg-opacity-10">
+            <b class="fs-2">Experience</b>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    Serious Game — made with Unity 2d
+                    <br>
+                    Collaborated in a group project to make a game that is fun while addressing a serious topic/issue.
+                    Contributed technically using C# and worked on conceptual designs. Uploaded to itch.io.
+                </li>
+                <li class="list-group-item">
+                    Unity Game — made with Unity 2d
+                    <br>
+                    Created simple space invaders-style game using C#. Uploaded to itch.io.
+                </li>
+                <li class="list-group-item">
+                    Squirrel Data — made with ReactApp, ExpressJS, Axios, and AWS
+                    <br>
+                    Collaborated in a group project to create a website tracking squirrel sighting data on the Brooklyn
+                    College campus. Implemented front-end from rest API, ReactApp, ExpressJS, HTML, and CSS.
+                </li>
+                <li class="list-group-item">
+                    React App — made with ReactApp
+                    <br>
+                    Collaborated in a group project to make an app/website that allows users to display and upload
+                    Covid-19
+                    vaccination status. Contributed to UI/UX design.
+                </li>
+                <li class="list-group-item">
+                    Digital Art — made with Adobe Illustrator, Photoshop, Indesign, After Effects, and Sketchbook
+                    Autodesk.
+                    <br>
+                    Created simple animations, newsletters, and brochures.
+                </li>
+                <li class="list-group-item">
+                    Thriftara — made with ReactApp
+                    <br>
+                    Collaborated in a group project to make an ecommerce website.
+                </li>
+            </ul>
+        </section>
+
+        <section id="Education" class="row text-center p-4">
+            <b class="fs-2">Education</b>
+            <br>
+            <p>
+                Brooklyn College, Brooklyn, New York — Multimedia Computing Bachelor of Science
+                <br>
+                August 2019 - Current
+                <br>
+                Undergraduate at CUNY Brooklyn College majoring in Multimedia Computing.
+                <br>
+                <br>
+                Edward R. Murrow HS, Brooklyn, New York —
+                <br>
+                September 2015 - June 2019
+            </p>
+        </section>
     </div>
     <div class="home">
-        <a href="../index.html"><p>Home</p></a>
+        <a href="../index.html" class="text-center">
+            <p>Home</p>
+        </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
