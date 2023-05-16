@@ -5,16 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" href="DataVisualization.css">
     <title>Data Visualization</title>
 </head>
 
 <body>
     <div>
-        <h2>Data Visualization</h2>
+        <h2 class="dv-title">Data Visualization</h2>
+        <div>
+            <canvas id="doughnut-chart" width="800" height="450"></canvas>
+        </div>
+        <div>
+            <canvas id="polar-chart" width="800" height="450"></canvas>
+        </div>
     </div>
     <div class="home">
-        <a href="../index.html"><p>Home</p></a>
+        <a href="../index.html">
+            <p>Home</p>
+        </a>
     </div>
 </body>
+
+<script src="DataVisualization.js"></script>
 
 </html>
