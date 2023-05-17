@@ -5,16 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Audio.css">
     <title>Audio</title>
 </head>
 
 <body>
-    <div>
-        <h2>Audio Lab</h2>
+    <div id="audio-container">
+        <!-- <canvas id="myCanvas" width="500" height="500" style="border: 1px solid #000000;"></canvas> -->
+        <audio id="lofi-study-112191">
+            <source src="lofi-study-112191.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="relaxed-vlog-night-street-131746">
+            <source src="relaxed-vlog-night-street-131746.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="relaxing-145038">
+            <source src="relaxing-145038.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <img src="cooltext435707702130410.png" alt="Relaxing Music">
+        <div>
+            <button onclick="playLofi()" type="button">Track 1</button>
+            <button onclick="pauseLofi()" type="button">Pause track 1</button>
+            <br>
+            <button onclick="playAudio()" type="button">Track 2</button>
+            <button onclick="pauseAudio()" type="button">Pause Track 2</button>
+            <br>
+            <button onclick="playRelax()" type="button">Track 3</button>
+            <button onclick="pauseRelax()" type="button">Pause Track 3</button>
+        </div>
     </div>
     <div class="home">
-        <a href="../index.html"><p>Home</p></a>
+        <a href="../index.html">
+            <p>Home</p>
+        </a>
     </div>
+    <script>
+        var lofi = document.getElementById("lofi-study-112191");
+        function playLofi() {
+            lofi.play();
+        }
+        function pauseLofi() {
+            lofi.pause();
+        }
+
+        var night = document.getElementById("relaxed-vlog-night-street-131746")
+        function playAudio() {
+            night.play();
+        }
+        function pauseAudio() {
+            night.pause();
+        }
+        
+        var relax = document.getElementById("relaxing-145038")
+        function playRelax() {
+            relax.play();
+        }
+        function pauseRelax() {
+            relax.pause();
+        }
+    </script>
 </body>
 
 </html>

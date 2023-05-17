@@ -1,0 +1,10 @@
+#audio-container {
+    border: solid 2px;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+}
