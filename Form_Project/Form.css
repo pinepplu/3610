@@ -1,0 +1,40 @@
+.form-container {
+    background-image: url(scale.png);
+    min-height: 50vh;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#weight-form {
+    background-color: aliceblue;
+    width: 20vw;
+    text-align: center;
+    padding: 1.5rem 0;
+    opacity: 95%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 2px 1px lightsalmon;
+    margin-top: 100px;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:lavender;
+    width: 20vw;
+    border-radius: 20px;
+    margin-left: 40vw;
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+}

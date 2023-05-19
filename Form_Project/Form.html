@@ -5,16 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
     <title>Form Project</title>
 </head>
 
 <body>
-    <div>
-        <h2>Form Project</h2>
+    <div class="form-container">
+        <form id="weight-form">
+            <h2>Weight Converter</h2>
+            <input type="text" id="user" name="user" placeholder="name">
+            <br>
+            <br>
+            <b>Kilograms </b>
+            <input id="kg" type="number">
+            <input type="button" value="Convert" onclick="convert(kg.value)">
+            <button type="reset" id="clear">Reset</button>
+        </form>
     </div>
+
+    <div id="output">
+        <p>HI <b><span id="nameout"></span></b></p>
+        <p>Pounds: <span id="lbs"></span> lbs</p>
+        <p>Ounces: <span id="oz"></span> oz</p>
+        <p>Grams: <span id="g"></span> g</p>
+    </div>
+
     <div class="home">
-        <a href="../index.html"><p>Home</p></a>
+        <a href="../index.html">
+            <p>Home</p>
+        </a>
     </div>
+
+    <script>
+        function convert(val) {
+            var lbs = document.getElementById("lbs").innerHTML = val * 2.205;
+            var oz = document.getElementById("oz").innerHTML = val * 35.274;
+            var g = document.getElementById("g").innerHTML = val * 1000;
+        }
+
+        var clear = document.getElementById("clear")
+        var user = document.getElementById("user")
+
+        user.oninput = function () {
+            localStorage.setItem("user", user.value)
+        }
+
+        window.onload = function () {
+            user.value = localStorage.getItem("user")
+        }
+
+        document.getElementById("nameout").innerHTML = localStorage.getItem("user")
+
+        clear.onclick = function () {
+            user.value = "";
+            // clear local storage
+            localStorage.clear();
+        }
+    </script>
 </body>
 
 </html>
